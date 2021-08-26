@@ -1,0 +1,410 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+img{
+    max-width: 100%;
+}
+.container{
+    max-width: 1270px;
+    margin: auto;
+}
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.text-center{
+    text-align: center;
+}
+.text-start{
+    text-align: left;
+}
+.text-end{
+    text-align: right;
+}
+
+/* header section */
+header{
+    background-color: #000000;
+    padding: 10px 0;
+}
+.header-logo{
+    width: 30%;
+}
+.logo{}
+.logo img{
+    width: 100px;
+    height: auto;
+}
+.header-menu{
+    width: 70%;
+}
+.primary-menu{}
+.primary-menu > ul {
+	list-style: none;
+	line-height: 65px;
+}
+.primary-menu > ul li{
+    display: inline-block;
+    position: relative;
+}
+.primary-menu > ul li a{
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    padding: 0px 30px;
+}
+.primary-menu > ul li a:hover{
+    text-decoration: underline;
+    transition: .2s;
+}
+.primary-menu > ul li .sub-menu {
+	position: absolute;
+	top: 165%;
+	left: -26%;
+	width: 200px;
+	background-color: black;
+	border-top: 4px solid #fff;
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s;
+}
+.primary-menu > ul li .sub-menu li{
+    display: block;
+}
+.primary-menu > ul li .sub-menu li a{
+    display: block;
+    text-decoration: none;
+}
+.primary-menu > ul li:hover > .sub-menu {
+	top: 119%;
+	opacity: 1;
+	visibility: visible;
+}
+.primary-menu > ul li .sub-menu li a:hover{
+    background-color: #fff;
+    color: #000000;
+    text-decoration: underline;
+    transition: .4s;
+}
+
+/* banner-section */
+
+.banner {
+	background: url(img/banner-img.jpg) no-repeat;
+	background-size: cover;
+	padding: 350px 0;
+}
+.banner-content {
+	margin-top: -8%;
+	margin-left: -5%;
+}
+.banner-content h1 {
+	font-size: 4em;
+}
+.banner-content h4 {
+	font-size: 2em;
+	margin-top: 1.2%;
+}
+.banner-button {
+	margin-top: 2.2%;
+}
+.banner-btn {
+	display: inline-block;
+	padding: 22px 60px;
+	text-decoration: none;
+	border-radius: 15px;
+	font-size: 1.3em;
+    border: 2px solid transparent;
+    transition: .4s;
+    outline: none;
+}
+.btn-black{
+	background-color: #000;
+	color: #fff;
+	margin-right: 5%;
+	box-shadow: 1px 1px 1px 1px #fff;
+}
+.btn-black:hover{
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #000;
+}
+.btn-white{
+    background-color: #fff;
+    color: #000;
+}
+.btn-white:hover{
+    color: #fff;
+    background-color: #000;
+    border: 2px solid #000;
+}
+
+/* about-section */
+.about{
+    background-color: #87a471;
+    padding: 50px 0;
+}
+.about-title{}
+.about-title h1{
+    color: #fff;
+    font-size: 5em;
+    text-shadow: 1px 1px 10px #fff;
+    position: relative;
+}
+.about-title h1::after{
+    content: "";
+    position: absolute;
+    width: 32%;
+    height: 2px;
+    background-color: #fff;
+    bottom: 5%;
+    left: 34%;
+}
+.about-artical{
+    padding: 32px 0 0 0;
+}
+.artiacl-content{
+    width: 63%;
+    padding: 135px 0 0 63px;
+}
+.artiacl-content p{
+    color: #fff;
+}
+.artiacl-content p:nth-child(1) {
+	width: 81%;
+	word-spacing: 2px;
+}
+.artiacl-content p:nth-child(2) {
+	width: 76%;
+	word-spacing: 2px;
+}
+.artical-image{
+    width: 27%;
+}
+.artical-image img{}
+
+/* service-section */
+
+.service-section{
+    padding: 50px 0;
+    background-color: #606a64;
+}
+.service-title{
+    color: #fff;
+}
+.service-title h1{
+    font-size: 4em;
+    position: relative;
+    text-shadow: 1px 1px 10px #fff;
+}
+.service-title h1::after {
+	content: "";
+	position: absolute;
+	width: 30%;
+	height: 2px;
+	background-color: #fff;
+	left: 35.5%;
+	bottom: 5%;
+}
+.service-title h3 {
+	font-size: 2.5em;
+	font-weight: 400;
+	padding: 10px 0 20px 0;
+}
+.service-title p {
+	width: 40%;
+	margin: auto;
+}
+.services-items {
+	padding-top: 90px;
+}
+.service-box {
+	width: 21.0%;
+	margin-right: 1%;
+	background-color: #fff;
+	padding: 27px;
+	border-radius: 25px;
+	margin-left: 9%;
+}
+.service-box:nth-child(3){
+    margin-right: 0;
+}
+.s-icon {
+	min-height: 185px;
+	float: left;
+	padding: 0 20px 15px 0;
+}
+.s-icon img{}
+.s-content{}
+.s-content h2 {
+	color: #54607c;
+}
+.s-content p {
+	padding-top: 20px;
+	font-weight: 400;
+	color: #54607c;
+}
+
+/* Project-section */
+
+.project-section{
+    padding: 100px 0;
+    background-color: #87a471;
+}
+.project-title{
+    color: #fff;
+    padding-bottom: 50px;
+}
+.project-title h2 {
+	font-size: 2em;
+}
+.project-title p {
+	font-size: 1.2em;
+	font-weight: 300;
+	padding-top: 10px;
+}
+.project-items{}
+.project-details{
+    width: 47%;
+    margin-right: 3%;
+    border: 1px solid #ddd;
+}
+.project-details:last-child{
+    margin-right: 0;
+}
+.project-details img{
+    width: 100%;
+}
+.pd-content{
+    padding: 15px 0;
+}
+.pd-content p{
+    color: #5a6682;
+    font-weight: 500;
+}
+.pd-content h6{
+    color: #fff;
+    font-size: 1.2em;
+    padding-top: 10px;
+    font-weight: 500;
+}
+.pd-images{
+    padding-top: 50px;
+}
+.p-img{
+    width: 23%;
+    margin-right: 2%;
+}
+.p-img:last-child{
+    margin-right: 0;
+}
+
+/* team-section */
+
+.team-section{
+    background-color: #5b9776;
+    padding: 60px 0;
+}
+.team-title{}
+.team-title h1 {
+	position: relative;
+	color: #fff;
+	font-size: 2.5em;
+}
+.team-title h1::after {
+	content: "";
+	position: absolute;
+	width: 25%;
+	height: 2px;
+	background-color: #fff;
+	left: 38%;
+	bottom: -5%;
+}
+.team-members{
+    padding-top: 50px;
+}
+.member{
+    width: 30%;
+    margin-right: 4%;
+}
+.member:last-child{
+    margin-right: 0;
+}
+.member img{
+    width: 100%;
+}
+.ms-icon{
+    width: 100%;
+}
+.ms-icon ul {
+	list-style: none;
+	text-align: center;
+}
+.ms-icon ul li{
+    display: inline-block;
+    margin-right: 15px;
+}
+.ms-icon ul li a{
+    color: #fff;
+    font-size: 2em;
+    transition: .4s;
+}
+.ms-icon ul li a:hover{
+    color: #486c89;
+}
+
+/* contact-section */
+
+.contact-section {
+    background-color: #606a64;
+    padding: 120px 0;
+}
+.contact-detailes {
+}
+.contact-detailes h1 {
+    font-size: 3em;
+    color: #fff;
+    padding-bottom: 15px;
+}
+.contact-detailes p {
+    width: 62%;
+    margin: auto;
+    color: #fff;
+    font-size: 1.2em;
+    padding-bottom: 15px;
+}
+.contact-button {
+}
+.contact-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background: #00bc9c;
+    padding: 13px 43px;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: .4s;
+}
+.contact-btn:hover{
+    background-color: #486c89;
+}
+/* footer section */
+
+footer{
+    background-color: #000;
+    color: #fff;
+}
+footer p{
+    text-align: center;
+    font-size: 1.3em;
+    padding: 30px 0 10px;
+}
