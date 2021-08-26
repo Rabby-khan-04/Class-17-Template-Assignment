@@ -76,6 +76,7 @@ header{
     opacity: 0;
     visibility: hidden;
     transition: .4s;
+	padding: 0;
 }
 .primary-menu > ul li .sub-menu li{
     display: block;
